@@ -57,4 +57,4 @@ jobs:
           app-name: 'aspnetcore0131'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E26C87FD45DE45DF96AAA952CF0EF7AB }}
-          package: '${{ github.workspace }}/target/*.jar'
+          package: '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/aspnetcore0131'
