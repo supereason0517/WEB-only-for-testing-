@@ -3,6 +3,9 @@
 
 name: Build and deploy ASP.Net Core app to Azure Web App - aspnetcore0131
 
+env:
+    APP_CONFIGURATION_CONNECTION_STRING: ${{ secrets.APP_CONFIGURATION_CONNECTION_STRING }}
+
 on:
   push:
     branches:
